@@ -16,7 +16,7 @@ int main()
     }
 
     printf("reverse of the array i s.....\n");
-    for(int i=n-1;i>=0;i--)
+    for( i=n-1;i>=0;i--)
     {
         printf("%2d\n",arr[i]);
     }
