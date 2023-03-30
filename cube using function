@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+int cube(int x);      //function declaration
+int main()
+{
+    int a;
+    printf("enter the number....");
+
+    scanf("%d",&a);
+    printf("the cube of %d is %d",a,cube(a));   //function call
+    return 0;
+
+}
+int cube(int x)
+{
+    int f;
+    {
+                                //function defination
+
+            f=x*x*x;
+
+            return f;
+
+    }
+}
