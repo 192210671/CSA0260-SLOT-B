@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+void add();       //function declaration
+
+int main(){
+
+
+ add();            //function defination
+    return 0;
+
+}
+
+void add()
+{  int a,b,c;
+
+   scanf("%d",&a);  //function call
+   scanf("%d",&b);
+
+   c=a+b;
+
+   printf("%d",c);
+
+}
