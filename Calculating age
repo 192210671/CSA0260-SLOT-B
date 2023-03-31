@@ -1,0 +1,57 @@
+
+Calculate age of student at admission time - C
+Home > C Programs > C Structure and Union programs
+« PreviousNext »
+Programs
+C Structures and Union Programs
+Accept & display employee details
+Calculate total payment of workers
+Calculate total runs
+Calculate age of student
+Print details of customers
+Details of highest paid employee
+Program for Library operations
+Arrange student record in descending order
+Menu driven program for a book shop
+Create structure & display elements
+Menu driven program for employee structure
+Arrange student data alphabetically
+
+C program to read information of student. It contains Name, Roll number, Birthday, admission date. Calculate age of student at the time of admission.
+
+Solution:
+
+#include<stdio.h>
+/*Here, we are using nested structure*/
+struct student
+{
+     int roll_num;
+     char name[20];
+     struct Date
+     {
+          int D;
+          int M;
+          int Y;
+     }bd,ad;
+};
+int main()
+{
+     int r;
+     struct student a;
+     printf("\tEnter Student Details\n");
+     printf("----------------------------------------------------\n");
+     printf("Enter Roll-Number    : ");
+     scanf("%d",&a.roll_num);
+     printf("Enter Name      : ");
+     scanf("%s",a.name);
+     printf("Enter Birth-Date     : ");
+     scanf("%d-%d-%d",&a.bd.D,&a.bd.M,&a.bd.Y);
+     printf("Enter Admission-Date : ");
+     scanf("%d-%d-%d",&a.ad.D,&a.ad.M,&a.ad.Y);
+     r=a.ad.Y-a.bd.Y;
+     printf("----------------------------------------------------\n");
+     printf("\nApproximate Age of Student at the Time of Admission\n");
+     printf("----------------------------------------------------\n");
+     printf("\t%d Years",r);
+     return 0;
+}
