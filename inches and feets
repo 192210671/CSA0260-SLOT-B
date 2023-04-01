@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+#include<math.h>
+
+float inches;
+float feet;
+float yards;
+float maters;
+
+int main()
+{
+    float inches;
+
+
+    printf("enter the inches ...");
+    scanf("%f",&inches);
+
+    printf("\nfeet of given inches is ...%f\n",0.08*inches);
+
+    printf("\nyards of given inches is ..%f\n",0.02*inches);
+
+
+    printf("\nmeters of given inches is.....%f\n",0.025*inches);
+
+
+
+}
